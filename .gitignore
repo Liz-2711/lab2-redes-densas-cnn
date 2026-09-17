@@ -1,0 +1,19 @@
+# Ignora todo por default...
+*
+
+# ...pero permite entrar a los directorios para encontrar las excepciones de abajo
+!*/
+
+# Entregables del Lab 2 que sí queremos versionar
+!.gitignore
+!informe.md
+!Lab2_DenseNet_CNN.ipynb
+!codigo_python/
+!codigo_python/**
+
+# Nunca versionar el .env (rutas locales) ni artefactos de Python,
+# aunque caigan dentro de codigo_python/
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
